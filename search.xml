@@ -8,7 +8,7 @@
       <link href="/2023/10/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
       <url>/2023/10/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="1、冒泡排序"><a href="#1、冒泡排序" class="headerlink" title="1、冒泡排序"></a>1、冒泡排序</h1><ul><li><strong>原理</strong></li></ul><p>从第一个开始与后面的一个比较如果不相等就替换，一直比下去就会把最大的或者最小的比到最后一个元素，下一次比较的时候就把第二大或者第二小的放在倒数第二个，依次重复下去就实现排序。</p><ul><li><strong>时间复杂度</strong></li></ul><p>冒泡排序最好的时间复杂度为<strong>O(n)</strong></p><p>冒泡排序的最坏时间复杂度为<strong>O(n^2)</strong></p><p>冒泡排序最好的时间复杂度为<strong>O(n)</strong></p><ul><li><strong>空间复杂度</strong></li></ul><p>排序过程中只是使用数组原本的空间进行排序，因此空间复杂度为O(1)</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">Bubble_Sort</span><span class="params">(<span class="type">int</span> arr[],<span class="type">int</span> size)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,k=<span class="number">0</span>; </span><br><span class="line">    <span class="type">int</span> temp = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;size;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(k=<span class="number">0</span>;k&lt;size-i<span class="number">-1</span>;k++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[k]&lt;=arr[k+<span class="number">1</span>])    <span class="comment">// 从大到小</span></span><br><span class="line">            &#123;</span><br><span class="line">                temp = arr[k];       <span class="comment">// 替换位置</span></span><br><span class="line">                arr[k] = arr[k+<span class="number">1</span>];</span><br><span class="line">                arr[k+<span class="number">1</span>] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="2、快速排序"><a href="#2、快速排序" class="headerlink" title="2、快速排序"></a>2、快速排序</h1>]]></content>
       
       
       <categories>
@@ -48,19 +48,6 @@
             <tag> 嵌入式笔试笔试 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>树莓派远程桌面共享VNC</title>
-      <link href="/2023/10/20/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E5%85%B1%E4%BA%ABVNC/"/>
-      <url>/2023/10/20/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E5%85%B1%E4%BA%ABVNC/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
       
     </entry>
     
@@ -136,19 +123,6 @@
             <tag> stm32 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2023/10/19/hello-world/"/>
-      <url>/2023/10/19/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
